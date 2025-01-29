@@ -9,3 +9,4 @@ rootProject.name = "authdemo"
 include("basicAuthDemo")
 include("noAuthDemo")
 include("jwtAuthDemo")
+include("ssoAuthDemo")

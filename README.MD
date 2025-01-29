@@ -12,6 +12,7 @@ In this tutorial, we will cover several popular user authentication methods and 
 
 1. [Basic username/password Authentication](basicAuthDemo)
 2. [JWT Authentication](jwtAuthDemo)
+3. [Google SSO Authentication](ssoAuthDemo)
 
 ## Authentication using OpenID Connect(OIDC)
 

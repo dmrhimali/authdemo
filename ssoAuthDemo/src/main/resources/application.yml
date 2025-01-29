@@ -1,0 +1,28 @@
+server:
+  port: 8081 #using this port as I have configured my google console to use this base url for redirect uri. (see redirect-uri here and configured google project)
+spring:
+  thymeleaf:
+    cache: false  # Disable cache for development (ensure changes are reflected immediately)
+    mode: HTML    # Ensure HTML mode is used
+    prefix: classpath:/templates/  # Location of templates
+    suffix: .html  # Thymeleaf file extension
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${CLIENT_ID}
+            client-secret: ${CLIENT_SECRET}
+            scope:
+              - openid
+              - profile
+              - email
+            redirect-uri: http://localhost:8081/login/oauth2/code/google #should match google configuration redirect-uri
+            authorization-grant-type: authorization_code
+            client-name: Google
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/auth
+            token-uri: https://oauth2.googleapis.com/token
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+            user-name-attribute: sub
