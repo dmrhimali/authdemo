@@ -1,0 +1,257 @@
+_type: export
+__export_format: 4
+__export_date: 2025-01-19T04:35:35.732Z
+__export_source: insomnia.desktop.app:v10.3.0
+resources:
+  - _id: req_c0be0861dc73433b9bb7bc47606b67ad
+    parentId: fld_72b4eae137d54372ade59704a631b96e
+    modified: 1737260944667
+    created: 1737155490044
+    url: http://localhost:8080/admin/users
+    name: admin/users
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - id: pair_71548f0d4863467db643d425ee6b2db5
+          name: username
+          value: testadmin
+          description: ""
+          disabled: false
+        - id: pair_a0667056012d4912b81f1da01cba17e2
+          name: password
+          value: testadminpass
+          description: ""
+          disabled: false
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication:
+      type: none
+    metaSortKey: -1737155490044
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_72b4eae137d54372ade59704a631b96e
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1737132904956
+    created: 1737125830202
+    name: authDemo/basicAuthDemo
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1737125830202
+    environmentType: kv
+    _type: request_group
+  - _id: wrk_4f8a30e97f47433792693d149ab5288b
+    parentId: null
+    modified: 1734786392285
+    created: 1648218255070
+    name: MyTestingEndpoints
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_32ba6d17c4704ab89471caea6708f503
+    parentId: fld_72b4eae137d54372ade59704a631b96e
+    modified: 1737169948517
+    created: 1737169911356
+    url: http://localhost:8080/admin/addAdmin
+    name: admin/addAdmin
+    description: ""
+    method: POST
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - id: pair_873cd61bd84145998e49a9ba2e6e4040
+          name: username
+          value: testadmin
+          description: ""
+          disabled: false
+        - id: pair_3919c578b3784fff812e09b90c273d47
+          name: password
+          value: testadminpass
+          description: ""
+          disabled: false
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737140662866
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f7961a19a64c49f3a48341f390350422
+    parentId: fld_72b4eae137d54372ade59704a631b96e
+    modified: 1737170148090
+    created: 1737125835688
+    url: http://localhost:8080/api/register
+    name: register
+    description: ""
+    method: POST
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - id: pair_873cd61bd84145998e49a9ba2e6e4040
+          name: username
+          value: testuser
+          description: ""
+          disabled: false
+        - id: pair_3919c578b3784fff812e09b90c273d47
+          name: password
+          value: testpass
+          description: ""
+          disabled: false
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737125835688
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_958a4e4cd70842bcaa0b6f4d8f01dadd
+    parentId: fld_72b4eae137d54372ade59704a631b96e
+    modified: 1737170482506
+    created: 1737132912441
+    url: http://localhost:8080/login
+    name: login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - id: pair_71a04ad6679f4fe7bb6a5fc6688bcfdb
+          name: username
+          value: testadmin
+          description: ""
+          disabled: false
+        - id: pair_823c03d2710d48d7a626a86fa8c8aa23
+          name: password
+          value: testadminpass
+          description: ""
+          disabled: false
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737061093963
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_681513f3170749b58c3c03dd709d4a58
+    parentId: fld_72b4eae137d54372ade59704a631b96e
+    modified: 1737259943790
+    created: 1737220309992
+    url: http://localhost:8080/api/sayhello
+    name: sayHello
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - id: pair_71a04ad6679f4fe7bb6a5fc6688bcfdb
+          name: username
+          value: testadmin
+          description: ""
+          disabled: false
+        - id: pair_823c03d2710d48d7a626a86fa8c8aa23
+          name: password
+          value: testadminpass
+          description: ""
+          disabled: false
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737028723100.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_3c446eb7eb49f542adb4c056de2c19704a9510e2
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1648218255084
+    created: 1648218255084
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1648218255084
+    _type: environment
+  - _id: jar_3c446eb7eb49f542adb4c056de2c19704a9510e2
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1737261269905
+    created: 1648218255087
+    name: Default Jar
+    cookies:
+      - key: JSESSIONID
+        value: A7F95D5E8533B9665546A277D865AF18
+        domain: localhost
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2025-01-13T15:44:37.382Z
+        lastAccessed: 2025-01-19T04:34:29.904Z
+        id: ba651966-6d8a-4c29-a3e0-8bd01e68c331
+    _type: cookie_jar
+  - _id: spc_a8bd00e5b784463ca94cd98c36499aba
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1734786392284
+    created: 1648218255080
+    fileName: MyTestingEndpoints
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_677e895577534cc68c8f0dc6d6cbf852
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1648218255092
+    created: 1648218255092
+    name: Example Test Suite
+    metaSortKey: -1737261335804
+    _type: unit_test_suite

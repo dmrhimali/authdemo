@@ -1,0 +1,312 @@
+_type: export
+__export_format: 4
+__export_date: 2025-01-29T03:56:30.859Z
+__export_source: insomnia.desktop.app:v10.3.0
+resources:
+  - _id: req_b3f4765fbfb74b8a89a833c7f61003f3
+    parentId: fld_99420be35cfc4673bfd0f082f96fa47b
+    modified: 1738088543202
+    created: 1737386780330
+    url: http://localhost:8080/api/register
+    name: /api/register(user)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "john_doe",
+          "password": "password123",
+          "roles": ["ROLE_USER"]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737386780330
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_99420be35cfc4673bfd0f082f96fa47b
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1737386767881
+    created: 1737386767881
+    name: authdemo/jwtauth
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1737386767881
+    environmentType: kv
+    _type: request_group
+  - _id: wrk_4f8a30e97f47433792693d149ab5288b
+    parentId: null
+    modified: 1734786392285
+    created: 1648218255070
+    name: MyTestingEndpoints
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_6c65c88e6cb8461e8b62e4554048c25e
+    parentId: fld_99420be35cfc4673bfd0f082f96fa47b
+    modified: 1738091584594
+    created: 1737388410169
+    url: http://localhost:8080/api/register
+    name: /api/register(admin)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "newUser2",
+          "password": "password123",
+          "roles": ["ROLE_ADMIN"]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737357869044.25
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_759a38421b964b84bf2a00a94d3a3d37
+    parentId: fld_99420be35cfc4673bfd0f082f96fa47b
+    modified: 1737520717482
+    created: 1737388041177
+    url: http://localhost:8080/api/login
+    name: /api/login admin
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "admin",
+          "password": "adminpassword"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737328957758.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_96595db3cde14c1ea6f915d5a8abfbc2
+    parentId: fld_99420be35cfc4673bfd0f082f96fa47b
+    modified: 1737520728031
+    created: 1737520712967
+    url: http://localhost:8080/api/login
+    name: /api/login user
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "user",
+          "password": "userpassword"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737300046472.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f8d0bdda65e34a4c83578536c2169e53
+    parentId: fld_99420be35cfc4673bfd0f082f96fa47b
+    modified: 1738122935954
+    created: 1738121777783
+    url: http://localhost:8080/api/login
+    name: /api/login user2
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "newUser2",
+          "password": "password123"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737292818651.3125
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0d8c1223df524f8d9fc21b76316e6276
+    parentId: fld_99420be35cfc4673bfd0f082f96fa47b
+    modified: 1738121705425
+    created: 1737521069957
+    url: http://localhost:8080/api/refresh
+    name: /api/refresh
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+        id: pair_59646da5080c4e9c922df583788bc746
+      - id: pair_9cc093019e8b4bd5a0c06ec1a5d6040d
+        name: Authorization
+        value: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzM4MTIxNjQ3LCJleHAiOjE3MzgxMjIwMDd9.UC5GDeAtRgQeuFmrqT3bMm_EyWW4FVQxExdKnaqbKsT2ygICEtPcP4ZJlhV14Yi-In95-mTbo1eFBEjL9zgwng
+        description: ""
+        disabled: false
+    authentication: {}
+    metaSortKey: -1737285590829.875
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c40fb156b913406abaf9222e2a0c0dd3
+    parentId: fld_99420be35cfc4673bfd0f082f96fa47b
+    modified: 1738121877058
+    created: 1737387991909
+    url: http://localhost:8080/api/greet
+    name: /api/greet
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuZXdVc2VyMiIsInJvbGVzIjpbXSwiaWF0IjoxNzM4MTIxODQ3LCJleHAiOjE3MzgxMjIyMDd9.OV0aCnLjACyWLmJCOYwFNTMlfXZnUMzqy04ed5mOVXWx2tA0BS4Q3MJJJu5Azq7lskvvnaQYXcyzrBt4lplG5g
+      prefix: ""
+    metaSortKey: -1737271135187
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f8afd2b5b2374c0eb84f3d53ae574700
+    parentId: fld_99420be35cfc4673bfd0f082f96fa47b
+    modified: 1738122678824
+    created: 1737520762719
+    url: http://localhost:8080/api/users
+    name: /api/users
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuZXdVc2VyMiIsInJvbGVzIjpbIlJPTEVfQURNSU4iXSwiaWF0IjoxNzM4MTIyNjcwLCJleHAiOjE3MzgxMjMwMzB9.SuOFTuExTN7eJvROzs4pnop_6Dz3wRJ4pZvwQVAOogfOrGVHwa4_p4Mk5IiSxVIa05OhNG9HBErMCA8yy1TU_Q
+      prefix: ""
+    metaSortKey: -1737213312615.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_3c446eb7eb49f542adb4c056de2c19704a9510e2
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1648218255084
+    created: 1648218255084
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1648218255084
+    _type: environment
+  - _id: jar_3c446eb7eb49f542adb4c056de2c19704a9510e2
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1738121672401
+    created: 1648218255087
+    name: Default Jar
+    cookies:
+      - key: JSESSIONID
+        value: 69D7AD28264CAA4115C267ECB8EC4F9D
+        domain: localhost
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2025-01-13T15:44:37.382Z
+        lastAccessed: 2025-01-29T03:34:32.401Z
+        id: e87d27cb-45f6-4b35-b35b-fd6673355c60
+    _type: cookie_jar
+  - _id: spc_a8bd00e5b784463ca94cd98c36499aba
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1734786392284
+    created: 1648218255080
+    fileName: MyTestingEndpoints
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_677e895577534cc68c8f0dc6d6cbf852
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1648218255092
+    created: 1648218255092
+    name: Example Test Suite
+    metaSortKey: -1738122990876
+    _type: unit_test_suite
